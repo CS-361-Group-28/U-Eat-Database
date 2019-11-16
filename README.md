@@ -1,8 +1,2 @@
 # U-Eat-Database
-Database setup and management modules.
-## Details
-- SQL
-- OSU hosted.
-### Tables
-- User
-- Restaurant
+Database setup and management modules for SQL database hosted on OSU server.
