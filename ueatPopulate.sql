@@ -8,9 +8,10 @@ VALUES ('pizzapizza', 'pizza@pizza.com', 'pizza', 'p street', 'new york', 'new y
 /*INSERT INTO reservation ()
 VALUES ();*/
 
-INSERT INTO item (`name`, `price`, `imageURL`, `restaurant_id`)
+INSERT INTO menu_item (`name`, `price`, `imageURL`, `restaurant_id`)
 VALUES ('pepperoni','5.00','public/images/easy-pepperoni-pizza-lead-4.jpg', 1),
-       ('nicoise', '15.95', 'public/images/20150909-nicoise-salad-vicky-wasik-9-1500x1125.jpg', 2);
+       ('nicoise', '15.95', 'public/images/20150909-nicoise-salad-vicky-wasik-9-1500x1125.jpg', 2),
+       ('Chicken Tenders', '10.00', NULL, 1);
 
 INSERT INTO review (`account_id`, `restaurant_id`, `rating`, `review`)
 VALUES ('2','1','4','It\'s definitely pizza.'),

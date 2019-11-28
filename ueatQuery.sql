@@ -1,4 +1,4 @@
 select * from account;
 select * from restaurant;
-select * from item;
+select * from menu_item;
 select * from review;
