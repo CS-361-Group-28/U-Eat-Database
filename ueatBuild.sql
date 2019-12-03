@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS review (
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS reservation_item (
-    order_id INT(11) NOT NULL,
+    reservation_id INT(11) NOT NULL,
     FOREIGN KEY (order_id) REFERENCES reservation (id) ON DELETE CASCADE,
     item_id INT(11) NOT NULL,
     FOREIGN KEY (item_id) REFERENCES item (id) ON DELETE RESTRICT,
