@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS reservation_item (
     item_id INT(11) NOT NULL,
     FOREIGN KEY (item_id) REFERENCES item (id) ON DELETE RESTRICT,
     quantity INT(3) NOT NULL DEFAULT 1,
-    PRIMARY KEY (order_id, item_id)
+    PRIMARY KEY (reservation_id, item_id)
 ) ENGINE=InnoDB;
 
 SET foreign_key_checks=1;
