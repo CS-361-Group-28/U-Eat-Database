@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS reservation_item (
     reservation_id INT(11) NOT NULL,
     FOREIGN KEY (reservation_id) REFERENCES reservation (id) ON DELETE CASCADE,
     item_id INT(11) NOT NULL,
-    FOREIGN KEY (item_id) REFERENCES item (id) ON DELETE RESTRICT,
+    FOREIGN KEY (item_id) REFERENCES menu_item (id) ON DELETE RESTRICT,
     quantity INT(3) NOT NULL DEFAULT 1,
     PRIMARY KEY (reservation_id, item_id)
 ) ENGINE=InnoDB;
