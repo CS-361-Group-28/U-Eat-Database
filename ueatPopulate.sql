@@ -5,9 +5,6 @@ INSERT INTO restaurant (`name`, `email`, `password`, `street1`, `city`, `state`,
 VALUES ('pizzapizza', 'pizza@pizza.com', 'pizza', 'p street', 'new york', 'new york', '11111'),
         ('Salad House', 'leaf@lettuce.org', 'romaine', 'butter ave', 'bibb', 'california', '11111');
 
-/*INSERT INTO reservation ()
-VALUES ();*/
-
 INSERT INTO menu_item (`name`, `price`, `imageURL`, `restaurant_id`)
 VALUES ('pepperoni','5.00','/images/easy-pepperoni-pizza-lead-4.jpg', 1),
        ('nicoise', '15.95', '/images/20150909-nicoise-salad-vicky-wasik-9-1500x1125.jpg', 2),
@@ -17,5 +14,12 @@ INSERT INTO review (`account_id`, `restaurant_id`, `rating`, `review`)
 VALUES ('2','1','4','It\'s definitely pizza.'),
        ('3','2','3','The salad was full too green.');
 
-/*INSERT INTO reservation_item ()
-VALUES ();*/
+INSERT INTO reservation (`account_id`,`restaurant_id`,`date`,`readyTime`,`active`)
+VALUES 	('1','1','2019-12-02 14:15:00','2019-12-02 14:20:02','1'),
+		('2','2','2019-12-02 14:15:00','2019-12-02 14:30:00','0');
+
+INSERT INTO reservation_item (`reservation_id`,`item_id`,`quantity`)
+VALUES 	('1','1','4'),
+		('1','2','1'),
+		('2','3','2'),
+		('2','1','3');
