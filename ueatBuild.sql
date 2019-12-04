@@ -52,14 +52,14 @@ CREATE TABLE IF NOT EXISTS menu_item (
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS review (
-    id INT(11) NOT NULL UNIQUE AUTO_INCREMENT,
+    id INT(11) NOT NULL UNIQUE AUTO_INCREMENT PRIMARY KEY,
     account_id INT(11) NOT NULL,
     FOREIGN KEY (account_id) REFERENCES account (id) ON DELETE NO ACTION,
     restaurant_id INT(11) NOT NULL,
     FOREIGN KEY (restaurant_id) REFERENCES restaurant (id) ON DELETE CASCADE,
     rating INT(1) NOT NULL,
     review LONGTEXT NOT NULL,
-    PRIMARY KEY (account_id, restaurant_id)
+    reviewdate DATETIME DEFAULT current_timestamp()
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS reservation_item (
