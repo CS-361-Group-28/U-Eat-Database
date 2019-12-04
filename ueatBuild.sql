@@ -37,7 +37,9 @@ CREATE TABLE IF NOT EXISTS restaurant (
     street2 VARCHAR(128) DEFAULT NULL,
     city VARCHAR(128) NOT NULL,
     state VARCHAR(128) NOT NULL,
-    zip INT(5) NOT NULL
+    zip INT(5) NOT NULL,
+    lat float NOT NULL,
+    lng float NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS menu_item (
