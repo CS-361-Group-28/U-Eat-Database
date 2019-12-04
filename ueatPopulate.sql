@@ -7,8 +7,8 @@ INSERT INTO account (`username`, `email`, `password`) VALUES
 INSERT INTO `restaurant` (`id`, `name`, `rating`, `email`, `password`, `street1`, `street2`, `city`, `state`, `zip`, `lat`, `lng`) VALUES
     (1, 'pizzapizza', '3.0', 'pizza@pizza.com', 'pizza', 'p street', NULL, 'new york', 'new york', 11111, 40.8069, -73.8583),
     (2, 'Salad House', '3.0', 'leaf@lettuce.org', 'romaine', '10th Street', NULL, 'Sacramento', 'california', 95811, 38.5712, -121.498),
-    (3, 'Old Ironsides', '3.0', 'oldiron@drinks.com', '1234', '1901 10th St', NULL, 'Sacramento', 'CA', 95811, 38.5704, -121.498);
-    (4, 'The Refuge', '3.0', 'refuge@refuge.com', '1234', 'santa cruz ave', NULL, 'Menlo Park', 'CA', 94025, 37.45179, -122.185);
+    (3, 'Old Ironsides', '3.0', 'oldiron@drinks.com', '1234', '1901 10th St', NULL, 'Sacramento', 'CA', 95811, 38.5704, -121.498),
+    (4, 'The Refuge', '3.0', 'refuge@refuge.com', '1234', 'santa cruz ave', NULL, 'Menlo Park', 'CA', 94025, 37.45179, -122.185),
     (5, 'Kabab & Curry', '3.0', 'kbc@kbc.com', '1234', '1700 Clay St', NULL, 'Santa Clara', 'CA', 95050, 37.351, -121.955);
 
 INSERT INTO menu_item (`name`, `price`, `imageURL`, `restaurant_id`) VALUES
