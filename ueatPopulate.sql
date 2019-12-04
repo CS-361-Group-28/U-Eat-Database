@@ -1,9 +1,10 @@
 INSERT INTO account (`username`, `email`, `password`)
     VALUES ('test guy', 'test@test.com', 'test'), ('matbot', 'm@g.com', 'matbot'), ('team28', 'team@osu.edu', 'ueat');
 
-INSERT INTO restaurant (`name`, `email`, `password`, `street1`, `city`, `state`, `zip`)
-VALUES ('pizzapizza', 'pizza@pizza.com', 'pizza', 'p street', 'new york', 'new york', '11111'),
-        ('Salad House', 'leaf@lettuce.org', 'romaine', 'butter ave', 'bibb', 'california', '11111');
+INSERT INTO `restaurant` (`id`, `name`, `rating`, `email`, `password`, `street1`, `street2`, `city`, `state`, `zip`, `lat`, `lng`) VALUES
+(1, 'pizzapizza', '3.0', 'pizza@pizza.com', 'pizza', 'p street', NULL, 'new york', 'new york', 11111, 40.8069, -73.8583),
+(2, 'Salad House', '3.0', 'leaf@lettuce.org', 'romaine', '10th Street', NULL, 'Sacramento', 'california', 95811, 38.5712, -121.498),
+(3, 'Old Ironsides', '3.0', 'oldiron@drinks.com', '1234', '1901 10th St', NULL, 'Sacramento', 'CA', 95811, 38.5704, -121.498);
 
 INSERT INTO menu_item (`name`, `price`, `imageURL`, `restaurant_id`)
 VALUES ('pepperoni','5.00','/images/easy-pepperoni-pizza-lead-4.jpg', 1),
